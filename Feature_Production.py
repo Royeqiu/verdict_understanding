@@ -55,8 +55,6 @@ if __name__ == '__main__':
     threshold = mean-2*std
     feature_file = open('feature/unsafe_driving.fea', 'w')
     feature = [str(item) for item in sorted(idf_dict.items(), key=lambda d: d[1]) if item[1] < threshold]
-    print(feature)
-    print(json.dumps(feature, ensure_ascii=False))
-    #json.dump(json.dumps(feature),feature_file)
+    feature_file.write(json.dumps(feature, ensure_ascii=False))
 
 
