@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a16c98d-1fa4-46dd-8c73-cdcf7a906cdd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feature_Production.py" beforeDir="false" afterPath="$PROJECT_DIR$/Feature_Production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML/Feature_Transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/ML/Feature_Transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML/Training_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ML/Training_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_feature/ft_unsafe_driving.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/train_feature/ft_unsafe_driving.pkl" afterDir="false" />
-    </list>
+    <list default="true" id="1a16c98d-1fa4-46dd-8c73-cdcf7a906cdd" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +59,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ML/Training_Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
+            <state relative-caret-position="1110">
               <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -410,7 +403,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960339" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -630,7 +623,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ML/Training_Model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="1110">
           <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
