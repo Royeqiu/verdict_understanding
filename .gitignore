@@ -2,3 +2,5 @@ data/
 feature/
 dic/
 data.rar
+restore.py
+training_data/
