@@ -6,4 +6,6 @@ restore.py
 training_data/
 pre_training_feature/
 training_feature/
-pre_training_feature/unsafe_driving.fea
+pre_training_feature/
+train_feature/
+model/

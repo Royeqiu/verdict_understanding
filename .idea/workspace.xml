@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a16c98d-1fa4-46dd-8c73-cdcf7a906cdd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ML/Feature_Transform.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ML/Training_Model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pre_training_feature/unsafe_driving.fea" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feature_Loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/maintain_data/Feature_Loader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Feature_Production.py" beforeDir="false" afterPath="$PROJECT_DIR$/Feature_Production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feature_Transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/maintain_data/Feature_Transformer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Verdict.py" beforeDir="false" afterPath="$PROJECT_DIR$/Verdict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maintain_data/Label_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/maintain_data/Label_Data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ML/Feature_Transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/ML/Feature_Transform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ML/Training_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ML/Training_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_feature/ft_unsafe_driving.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/train_feature/ft_unsafe_driving.pkl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +30,7 @@
         <counts>
           <entry key="dummy" value="37" />
           <entry key="gitignore" value="11" />
-          <entry key="py" value="4260" />
+          <entry key="py" value="5450" />
           <entry key="stopword" value="57" />
           <entry key="userdic" value="12" />
         </counts>
@@ -42,14 +38,14 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="117" />
-          <entry key="Python" value="4260" />
+          <entry key="Python" value="5450" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
           <entry key="punctuation" value="3" />
-          <entry key="py" value="27" />
+          <entry key="py" value="34" />
           <entry key="stopunit" value="1" />
           <entry key="stopword" value="2" />
           <entry key="txt" value="3" />
@@ -59,66 +55,30 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="27" />
+          <entry key="Python" value="34" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Feature_Production.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ML/Training_Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1559982991769" expanded="true" signature="183:430" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NLP_function.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-312">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maintain_data/Feature_Transformer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1559983087268" expanded="true" signature="72:77" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maintain_data/Label_Data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <state relative-caret-position="274">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1559962052373" expanded="true" signature="178:820" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ML/Feature_Transform.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+            <state relative-caret-position="253">
+              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
               <folding>
                 <element signature="e#0#65#0" expanded="true" />
               </folding>
@@ -127,19 +87,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ML/Training_Model.py">
+        <entry file="file://$PROJECT_DIR$/maintain_data/Feature_Transformer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="24">
+              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+              <folding>
+                <marker date="1559985632785" expanded="true" signature="72:77" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dic/stopword">
+        <entry file="file://$PROJECT_DIR$/maintain_data/Label_Data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="1200">
+              <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1559962052373" expanded="true" signature="178:820" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,6 +143,8 @@
       <find>pun</find>
       <find>中</find>
       <find>我</find>
+      <find>動力交通工具</find>
+      <find>不能安全駕駛</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,7 +168,6 @@
         <option value="$PROJECT_DIR$/NLP_function.py" />
         <option value="$PROJECT_DIR$/Label_data.py" />
         <option value="$PROJECT_DIR$/Label_Data.py" />
-        <option value="$PROJECT_DIR$/Feature_Production.py" />
         <option value="$PROJECT_DIR$/maintain_data/Feature_Loader.py" />
         <option value="$PROJECT_DIR$/Verdict.py" />
         <option value="$PROJECT_DIR$/dic/userdic" />
@@ -208,9 +176,10 @@
         <option value="$PROJECT_DIR$/maintain_data/Label_Data.py" />
         <option value="$PROJECT_DIR$/training_model.py" />
         <option value="$PROJECT_DIR$/dic/stopword" />
-        <option value="$PROJECT_DIR$/ML/Training_Model.py" />
-        <option value="$PROJECT_DIR$/maintain_data/Feature_Transformer.py" />
+        <option value="$PROJECT_DIR$/Feature_Production.py" />
         <option value="$PROJECT_DIR$/ML/Feature_Transform.py" />
+        <option value="$PROJECT_DIR$/maintain_data/Feature_Transformer.py" />
+        <option value="$PROJECT_DIR$/ML/Training_Model.py" />
       </list>
     </option>
   </component>
@@ -247,21 +216,6 @@
               <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
               <item name="verdict_understanding" type="462c0819:PsiDirectoryNode" />
               <item name="ML" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="verdict_understanding" type="462c0819:PsiDirectoryNode" />
-              <item name="NLP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="verdict_understanding" type="462c0819:PsiDirectoryNode" />
-              <item name="pre_training_feature" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="verdict_understanding" type="462c0819:PsiDirectoryNode" />
-              <item name="train_feature" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
@@ -307,6 +261,25 @@
               <item name="site-packages" type="462c0819:PsiDirectoryNode" />
               <item name="jieba" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Python36" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="sklearn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Python36" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="sklearn" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -340,7 +313,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Feature_Transform">
+  <component name="RunManager" selected="Python.Training_Model">
     <configuration name="Feature_Production" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hackthon" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -383,48 +356,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Feature_Transformer" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="hackthon" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\Users\roye\Documents\GitHub\verdict_understanding\maintain_data\Feature_Transformer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Label_Data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="hackthon" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/maintain_data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/maintain_data/Label_Data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Training_Model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hackthon" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -437,7 +368,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\Users\roye\Documents\GitHub\verdict_understanding\ML\Feature_Transform.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML/Training_Model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -447,19 +378,15 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Feature_Production" />
-      <item itemvalue="Python.Feature_Transformer" />
-      <item itemvalue="Python.Label_Data" />
       <item itemvalue="Python.Training_Model" />
       <item itemvalue="Python.Feature_Transform" />
+      <item itemvalue="Python.Feature_Production" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Feature_Transform" />
         <item itemvalue="Python.Training_Model" />
-        <item itemvalue="Python.Feature_Transformer" />
+        <item itemvalue="Python.Feature_Transform" />
         <item itemvalue="Python.Feature_Production" />
-        <item itemvalue="Python.Label_Data" />
       </list>
     </recent_temporary>
   </component>
@@ -477,7 +404,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960339" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -632,6 +560,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NLP_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-507">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML/Feature_Transform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feature_Production.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="41" column="86" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1559984666138" expanded="true" signature="183:425" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dic/stopword">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -639,28 +595,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NLP_function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Feature_Production.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1559982991769" expanded="true" signature="183:430" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/maintain_data/Label_Data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        <state relative-caret-position="1200">
+          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <marker date="1559962052373" expanded="true" signature="178:820" ph="..." />
@@ -668,30 +606,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML/Training_Model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/maintain_data/Feature_Transformer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="24">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1559983087268" expanded="true" signature="72:77" ph="..." />
+            <marker date="1559985632785" expanded="true" signature="72:77" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML/Feature_Transform.py">
+    <entry file="file://D:/Program Files/Python36/Lib/site-packages/sklearn/utils/validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="174">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML/Training_Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding>
-            <element signature="e#0#65#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

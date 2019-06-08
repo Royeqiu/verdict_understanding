@@ -10,7 +10,7 @@ def extract_feature(idf_dict):
     mean = numpy.mean([value for value in idf_dict.values()])
     std = numpy.std(sorted(idf_dict.values()))
     threshold = mean - 2 * std
-    feature = [str(item) for item in sorted(idf_dict.items(), key=lambda d: d[1]) if item[1] < threshold]
+    feature = [item for item in sorted(idf_dict.items(), key=lambda d: d[1]) if item[1] < threshold]
     return feature
 
 if __name__ == '__main__':
@@ -39,7 +39,7 @@ if __name__ == '__main__':
                 other_verdict = verdict
     idf_dict = NLP_function.cal_idf(corpus)
     feature = extract_feature(idf_dict)
-    feature_file = open('pre_training_feature/unsafe_driving.fea', 'w')
+    feature_file = open('pre_training_feature/unsafe_driving.fea', 'w',encoding='utf-8')
     feature_file.write(json.dumps(feature, ensure_ascii=False))
 
 

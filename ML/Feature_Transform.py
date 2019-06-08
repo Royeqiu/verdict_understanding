@@ -3,7 +3,7 @@ from NLP.NLP_Tool import NLP_Tool
 import pickle
 import numpy
 import json
-with open('../pre_training_feature/unsafe_driving.fea','r') as op:
+with open('../pre_training_feature/unsafe_driving.fea','r',encoding='utf-8') as op:
     unsafe_driving_feature = json.loads(op.readline())
     op.close()
 unsafe_driving_feature=[str(feature[0]) for feature in unsafe_driving_feature]
