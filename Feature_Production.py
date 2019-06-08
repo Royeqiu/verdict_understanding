@@ -4,7 +4,7 @@ from os import listdir
 import jieba
 import NLP_function
 import numpy
-from Feature_Loader import Feature_Loader
+from maintain_data.Feature_Loader import Feature_Loader
 
 def extract_feature(idf_dict):
     mean = numpy.mean([value for value in idf_dict.values()])
@@ -39,7 +39,7 @@ if __name__ == '__main__':
                 other_verdict = verdict
     idf_dict = NLP_function.cal_idf(corpus)
     feature = extract_feature(idf_dict)
-    feature_file = open('feature/unsafe_driving.fea', 'w')
+    feature_file = open('pre_training_feature/unsafe_driving.fea', 'w')
     feature_file.write(json.dumps(feature, ensure_ascii=False))
 
 

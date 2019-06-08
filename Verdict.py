@@ -27,6 +27,14 @@ class Verdict:
                 break
         return main_content
 
+    def get_people_name(self):
+        if self.get_main_content()!=None:
+            term_list = segment.seg(HanziConv.toSimplified(self.get_main_content()))
+            for term in term_list:
+                if str(term.nature) == NLP_Constant.people_name_pos:
+                    return HanziConv.toTraditional(str(term.word))
+        return None
+
 class Unsafe_Driving(Verdict):
 
     def __init__(self,filepath):
@@ -38,12 +46,7 @@ class Unsafe_Driving(Verdict):
         else:
             return False
 
-    def get_people_name(self):
-        term_list = segment.seg(HanziConv.toSimplified(self.get_main_content()))
-        for term in term_list:
-            if str(term.nature) == NLP_Constant.people_name_pos:
-                return HanziConv.toTraditional(str(term.word))
-        return None
+
 
 def is_unsafe_driving(json_verdict): #目前只有針對第一項，酒駕項目進行處理
     if Verdict_Constant.unsafe_driving_constant.type_one_keyword \

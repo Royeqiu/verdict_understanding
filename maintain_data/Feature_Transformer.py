@@ -7,14 +7,19 @@ class Feature_Transformer:
         self.feature_to_index = dict()
         self.index_to_feature = dict()
 
-    def load_feature(self,filepath):
-        with open(filepath,'r',encoding='utf-8') as op:
-            json_feature = json.load(op)
+    def load_corpus(self, corpus,key_feature=[]):
+        token_set = set()
+        for tokens in corpus:
+            token_set.update(tokens)
+        if len(key_feature)==0:
+            key_feature=list(token_set)
         self.feature_to_index[NLP_Constant.unknown_term] = 0
         self.index_to_feature[0] = NLP_Constant.unknown_term
-        for feature_pair in json_feature:
-            self.feature_to_index[feature_pair[0]] = len(self.feature_to_index)
-            self.index_to_feature[len(self.index_to_feature)] = feature_pair[0]
+
+        for token in token_set:
+            if token in key_feature:
+                self.feature_to_index[token] = len(self.feature_to_index)
+                self.index_to_feature[len(self.index_to_feature)] = token
 
     def turn_index_to_one_hot(self,word_list):
         one_hot_vec = numpy.zeros(len(self.feature_to_index))
