@@ -1,6 +1,6 @@
 class Verdict_Constant:
-    title = 'JTITLE'
-    full_text = 'JFULL'
+    title = 'jtitle'
+    full_text = 'jfull'
     main_content = ['主 文','主文']
 
     people_name = '被移送人'

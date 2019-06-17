@@ -4,7 +4,9 @@ dic/
 data.rar
 restore.py
 training_data/
+*.json
 pre_training_feature/
 train_feature/
 pre_training_feature/
 model/
+unsafe_driving/

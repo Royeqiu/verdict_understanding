@@ -5,17 +5,15 @@ from hanziconv import HanziConv
 from pyhanlp import *
 segment = HanLP.newSegment().enableNameRecognize(True);
 class Verdict:
-    def __init__(self, filepath):
-        with open(filepath, 'r', encoding='utf-8') as op:
-            self.json_verdict= json.load(op)
-            op.close()
+    def __init__(self, json_verdict):
+        self.json_verdict = json_verdict
 
     def get_title(self):
         return self.json_verdict[Verdict_Constant.verdict_constant.title]
 
     def get_main_content(self):
         main_content = None
-        verdict_sentences = self.json_verdict[Verdict_Constant.verdict_constant.full_text].replace(Verdict_Constant.verdict_constant.newline, '').split(Verdict_Constant.verdict_constant.period)
+        verdict_sentences = self.get_all_text().replace(Verdict_Constant.verdict_constant.newline, '').split(Verdict_Constant.verdict_constant.period)
         for i,verdict_sentence in enumerate(verdict_sentences):
             while Verdict_Constant.verdict_constant.duplicate_space in verdict_sentence:
                 verdict_sentence = verdict_sentence.replace(Verdict_Constant.verdict_constant.duplicate_space, Verdict_Constant.verdict_constant.single_space)
@@ -35,17 +33,22 @@ class Verdict:
                     return HanziConv.toTraditional(str(term.word))
         return None
 
+    def get_all_text(self):
+        return self.json_verdict[Verdict_Constant.verdict_constant.full_text]
+
+    def get_clues_fact(self):
+        print(self.get_all_text())
+
 class Unsafe_Driving(Verdict):
 
-    def __init__(self,filepath):
-        super(Unsafe_Driving,self).__init__(filepath)
+    def __init__(self,json_verdict):
+        super(Unsafe_Driving,self).__init__(json_verdict)
 
     def is_confirmed(self):
         if Verdict_Constant.unsafe_driving_constant.type_one_keyword in self.get_main_content():
             return True
         else:
             return False
-
 
 
 def is_unsafe_driving(json_verdict): #目前只有針對第一項，酒駕項目進行處理

@@ -1,5 +1,6 @@
 import pickle
 import random
+import json
 from os import listdir
 import Verdict
 import jieba
@@ -31,7 +32,9 @@ jieba.load_userdict('../dic/userdic')
 for folder_name in listdir(root):
     for file_name in listdir(root + folder_name):
         total_name = root + folder_name + '/' + file_name
-        verdict = Verdict.Verdict(total_name)
+        with open(total_name,'r',encoding='utf-8') as op:
+            verdict = Verdict.Verdict(json.load(op))
+            op.close()
         main_content_tokens = tokenize(verdict)
         if Verdict.is_unsafe_driving(verdict.json_verdict):
             tmp_dict = dict()

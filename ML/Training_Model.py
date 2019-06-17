@@ -1,6 +1,5 @@
 import pickle
 from sklearn.linear_model import LogisticRegression
-import numpy as np
 ft = pickle.load(open('../train_feature/ft_unsafe_driving.pkl','rb'))
 corpus_data = open('../training_data/unsafe_driving.pkl','rb')
 training_data = pickle.load(corpus_data)
@@ -10,7 +9,6 @@ training_input = []
 training_output = []
 test_input = []
 test_output = []
-#print (training_data)
 for i in range(split):
     training_input.append(ft.turn_index_to_one_hot(training_data[i]['data']))
     training_output.append(training_data[i]['label'])

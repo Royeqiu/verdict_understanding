@@ -16,15 +16,19 @@ def extract_feature(idf_dict):
 if __name__ == '__main__':
     feature_loader = Feature_Loader()
     jieba.load_userdict('dic/userdic')
-    root = 'data/'
+    root = '../data/'
     verdict_list = []
     corpus = []
     for folder_name in listdir(root):
         for file_name in listdir(root + folder_name):
             total_name = root + folder_name + '/' + file_name
-            verdict = Verdict.Verdict(total_name)
+            with open(total_name,'r',encoding='utf-8') as op:
+                verdict = Verdict.Verdict(json.load(op))
+                op.close()
             if Verdict.is_unsafe_driving(verdict.json_verdict):
-                unsafe_drive_verdict = Verdict.Unsafe_Driving(total_name)
+                with open(total_name, 'r', encoding='utf-8') as op:
+                    unsafe_drive_verdict = Verdict.Unsafe_Driving(json.load(op))
+                    op.close()
                 verdict_content = unsafe_drive_verdict.get_main_content()
                 people_name = unsafe_drive_verdict.get_people_name()
                 if people_name is not None:
@@ -39,7 +43,7 @@ if __name__ == '__main__':
                 other_verdict = verdict
     idf_dict = NLP_function.cal_idf(corpus)
     feature = extract_feature(idf_dict)
-    feature_file = open('pre_training_feature/unsafe_driving.fea', 'w',encoding='utf-8')
+    feature_file = open('../pre_training_feature/unsafe_driving.fea', 'w',encoding='utf-8')
     feature_file.write(json.dumps(feature, ensure_ascii=False))
 
 
