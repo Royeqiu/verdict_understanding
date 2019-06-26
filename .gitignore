@@ -10,3 +10,6 @@ train_feature/
 pre_training_feature/
 model/
 unsafe_driving/
+nsd-json/
+embed_verdict/
+factor_training_data/

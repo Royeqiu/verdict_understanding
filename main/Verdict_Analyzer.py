@@ -23,7 +23,7 @@ def analyze(verdict):
 
 if __name__ == '__main__':
 
-    test_data = open('../test_data.json', 'r', encoding='utf-8')
+    test_data = open('../test_case.json', 'r', encoding='utf-8')
     json_verdict = json.load(test_data)
     print('Verdict Feature:')
     print(ft.feature_to_index)
