@@ -4,6 +4,7 @@ import flask
 from main_py import Verdict_Analyzer
 import json
 from Verdict import Verdict
+from flask_py import transform_vec_to_json
 app = Flask(__name__)
 
 @app.route("/test_query",methods=['POST'])
@@ -43,10 +44,22 @@ def test_query():
 
 @app.route("/formal_query",methods=['POST'])
 def fomal_query():
+    from flask_py import Factor_Extractor
+
     json_verdict = request.get_json()
-    json_feature = json.load(open('../pre_training_feature/unsafe_driving.fea', 'r', encoding='utf-8'))
     test_verdict = Verdict(json_verdict)
     is_unsafe_driving = Verdict_Analyzer.analyze(test_verdict)
+    if is_unsafe_driving == 1:
+        res_vec = Factor_Extractor.extract_factor(test_verdict)
+        template_result = transform_vec_to_json.produce_template(res_vec)
+    else:
+        template_result = transform_vec_to_json.basic_template()
+    resp = flask.Response(json.dumps([template_result], ensure_ascii=False))
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    return resp
+
+
+
 
 if __name__ == "__main__":
     app.run(host= '0.0.0.0', port=5000)

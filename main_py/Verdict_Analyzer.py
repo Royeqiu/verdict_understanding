@@ -16,7 +16,7 @@ logreg = pickle.load(open('../model/unsafe_driving.mod','rb'))
 
 def analyze(verdict):
 
-    verdict_content = test_verdict.get_main_content()
+    verdict_content = verdict.get_main_content()
     test_input = ft.turn_index_to_one_hot([str(term) for term in jieba.cut(verdict_content) if NLP_function.is_stopword(term,feature_loader.stopword_list,feature_loader.punctuation_list,feature_loader.stopunit_list)])
 
     return logreg.predict([test_input])[0]

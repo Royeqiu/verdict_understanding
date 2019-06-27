@@ -29,7 +29,7 @@ training_verdict_list = pickle.load(open('../embed_verdict/unsafe_driving_'+str(
 word_set_dict = pickle.load(open('../embed_verdict/fcs_word_set.dic', 'rb'))
 word_to_index_dict = pickle.load(open('../embed_verdict/fcs_word_index.dic','rb'))
 index_to_word_dict = pickle.load(open('../embed_verdict/fcs_index_word.dic','rb'))
-word_number = len(word_set_dict['fcs_36'])
+word_number = len(word_set_dict[lc.driving_occupation_code])
 training_x = []
 training_y = []
 
@@ -51,7 +51,7 @@ for i,verdict in enumerate(training_verdict_list):
                               lc.driving_occupation_vec_index:lc.driving_occupation_vec_index + lc.driving_occupation_vec_len])
 
 print(max_len)
-"""
+
 training_x = pad_vec_sequence(training_x,max_len)
 training_y = np.asarray(training_y)
 print(training_x)
@@ -94,7 +94,7 @@ result = model.predict([training_x])
 correct_count = 0
 for i,single in enumerate(result):
     print(single,training_y[i])
-    if single[0] > lc.driving_occupation_thread:
+    if single[0] > lc.driving_occupation_threshold:
         re = 1.0
     else:
         re = 0.0
@@ -102,4 +102,3 @@ for i,single in enumerate(result):
         correct_count+=1
     print(re,':',training_y[i][0])
 print(correct_count/len(training_x))
-"""

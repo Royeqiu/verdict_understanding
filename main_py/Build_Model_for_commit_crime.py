@@ -29,7 +29,7 @@ training_verdict_list = pickle.load(open('../embed_verdict/unsafe_driving_'+str(
 word_set_dict = pickle.load(open('../embed_verdict/fcs_word_set.dic', 'rb'))
 word_to_index_dict = pickle.load(open('../embed_verdict/fcs_word_index.dic','rb'))
 index_to_word_dict = pickle.load(open('../embed_verdict/fcs_index_word.dic','rb'))
-word_number = len(word_set_dict['fcs_36'])
+word_number = len(word_set_dict[lc.commit_crime_code])
 training_x = []
 training_y = []
 
@@ -56,7 +56,7 @@ for y in training_y:
     label_count[y[0]] +=1
 print(label_count)
 print(max_len)
-"""
+
 training_x = pad_vec_sequence(training_x,max_len)
 training_y = np.asarray(training_y)
 print(training_x)
@@ -81,7 +81,7 @@ model.compile(optimizer='adam', loss=binary_loss, metrics=['accuracy'])
 data_length = len(training_x)
 
 batch_size = 5
-
+model = load_model('../model/commit_crime.h5')
 model.fit(training_x,training_y,validation_split = 0.1,epochs = 5)
 model.save('../model/commit_crime.h5')
 #del(model)
@@ -90,7 +90,7 @@ result = model.predict([training_x])
 correct_count = 0
 for i,single in enumerate(result):
     print(single,training_y[i])
-    if single[0] > lc.commit_crime_thread:
+    if single[0] > lc.commit_crime_threshold:
         re = 1.0
     else:
         re = 0.0
@@ -98,4 +98,3 @@ for i,single in enumerate(result):
         correct_count+=1
     print(re,':',training_y[i][0])
 print(correct_count/len(training_x))
-"""

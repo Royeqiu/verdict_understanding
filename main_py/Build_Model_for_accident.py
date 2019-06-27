@@ -29,23 +29,23 @@ training_verdict_list = pickle.load(open('../embed_verdict/unsafe_driving_'+str(
 word_set_dict = pickle.load(open('../embed_verdict/fcs_word_set.dic', 'rb'))
 word_to_index_dict = pickle.load(open('../embed_verdict/fcs_word_index.dic','rb'))
 index_to_word_dict = pickle.load(open('../embed_verdict/fcs_index_word.dic','rb'))
-word_number = len(word_set_dict['fcs_36'])
+word_number = len(word_set_dict[lc.accident_code])
 training_x = []
 training_y = []
 
 max_len = 0
 for i,verdict in enumerate(training_verdict_list):
     input_x = []
-    if 'fcs_36_context' in verdict.keys():
-        for sen in verdict['fcs_36_context']:
-            input_x.extend([word_to_index_dict['fcs_36'][word] for word in sen if word in word_to_index_dict['fcs_36'].keys()])
+    if lc.accident_context in verdict.keys():
+        for sen in verdict[lc.accident_context]:
+            input_x.extend([word_to_index_dict[lc.accident_code][word] for word in sen if word in word_to_index_dict[lc.accident_code].keys()])
         if len(input_x) > max_len:
             max_len = len(input_x)
         training_x.append(input_x)
         training_y.append(verdict['label_vector'][14:15])
 
 print(max_len)
-"""
+
 training_x = pad_vec_sequence(training_x,max_len)
 training_y = np.asarray(training_y)
 print(training_x)
@@ -78,11 +78,10 @@ model = load_model('../model/accident.h5')
 result = model.predict([training_x])
 correct_count = 0
 for i,single in enumerate(result):
-    if single[0] > lc.accident_thread:
+    if single[0] > lc.accident_threashold:
         re = 1.0
     else:
         re = 0.0
     if re == training_y[i][0]:
         correct_count+=1
 print(correct_count/len(training_x))
-"""

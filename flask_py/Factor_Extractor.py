@@ -37,7 +37,7 @@ def split_content(verdict_content):
     for i in range(1, len(total_sen)):
         tmp_text += total_sen[i]
     verdict_content = tmp_text
-    sentences = [sentence for i,sentence in enumerate(re.split('。|，|：|；|\uf6b1|\uf6b2|\uf6b3|\uf6b4|\uf6b5|\uf6b6|\uf6b7|\uf6b8|事實|事    實', verdict_content)) if len(sentence) != 0 and i != 0]
+    sentences = [sentence for i,sentence in enumerate(re.split('。|，|：|；|\uf6b1|\uf6b2|\uf6b3|\uf6b4|\uf6b5|\uf6b6|\uf6b7|\uf6b8', verdict_content)) if len(sentence) != 0 and i != 0]
 
     return sentences
 
@@ -65,7 +65,10 @@ def get_prdict_result(padded_encode_dict,target_text_dict):
     result_list = []
     for factor_index, factor_code in enumerate(lc.factor_code_list):
         if lc.factor_is_ml_model_list[factor_index]:
-            result_list.append(model_list[factor_index].predict(np.asarray([padded_encode_dict[factor_code]])))
+            if padded_encode_dict[factor_code] is None:
+                result_list.append(None)
+            else:
+                result_list.append(model_list[factor_index].predict(np.asarray([padded_encode_dict[factor_code]])))
         else:
             result_list.append(model_list[factor_index].predict(target_text_dict[lc.factor_code_list[factor_index]]))
 
@@ -114,6 +117,7 @@ def extract_factor(verdict):
     verdict.get_all_text()
     verdict_sentences = split_content(verdict.get_all_text())
     target_text_dict = get_target_text(verdict_sentences)
+    print(target_text_dict)
     text_encode_dict = get_encoding(target_text_dict)
     padded_encode_dict = padding_facotr_encode(text_encode_dict)
     result_list = get_prdict_result(padded_encode_dict,target_text_dict)

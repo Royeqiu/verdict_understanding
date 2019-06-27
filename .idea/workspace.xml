@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a16c98d-1fa4-46dd-8c73-cdcf7a906cdd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/main_py/Build_Model_for_alocohol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_py/Build_Model_for_violate_property.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_py/transform_vec_to_json.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Label_Constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Label_Constant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask/Factor_Extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask/Factor_Extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/Build_Model_for_accident.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Build_Model_for_accident.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/Build_Model_for_commit_crime.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Build_Model_for_commit_crime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/Build_Model_for_driving_occupation.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Build_Model_for_driving_occupation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/Build_Model_for_region.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Build_Model_for_region.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/Build_Model_for_vechile.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Build_Model_for_vechile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/Verdict_Analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Verdict_Analyzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask/Factor_Extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_py/Factor_Extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_py/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_py/Build_Model_for_accident.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Build_Model_for_accident.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_py/Build_Model_for_commit_crime.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Build_Model_for_commit_crime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_py/Build_Model_for_driving_occupation.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Build_Model_for_driving_occupation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_py/Build_Model_for_region.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Build_Model_for_region.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_py/Build_Model_for_vechile.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Build_Model_for_vechile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_py/Verdict_Analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_py/Verdict_Analyzer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maintain_data/Embed_Verdict.py" beforeDir="false" afterPath="$PROJECT_DIR$/maintain_data/Embed_Verdict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maintain_data/Extract_Context.py" beforeDir="false" afterPath="$PROJECT_DIR$/maintain_data/Extract_Context.py" afterDir="false" />
     </list>
@@ -25,35 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flask/Factor_Extractor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_violate_property.py">
+        <entry file="file://$PROJECT_DIR$/flask_py/Factor_Extractor.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_driving_occupation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+              <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -62,13 +37,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_alocohol.py">
+        <entry file="file://$PROJECT_DIR$/maintain_data/Extract_Context.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="437">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask_py/controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask_py/transform_vec_to_json.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="96" column="54" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_commit_crime.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/maintain_data/Embed_Verdict.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Label_Constant.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -84,7 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>data/臺灣臺南地方法院刑事/TNDM,107,交簡,329,20180212,1.json</find>
       <find>nr</find>
       <find>None</find>
       <find>濃度</find>
@@ -108,12 +139,13 @@
       <find>主文</find>
       <find>5000</find>
       <find>0.99</find>
-      <find>print</find>
       <find>傷害</find>
       <find>受傷</find>
       <find>0</find>
       <find>1.0</find>
-      <find>0</find>
+      <find>1</find>
+      <find>../embed_verdict/fcs_word_set.dic</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>verdict_count</replace>
@@ -125,15 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dic/punctuation" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/NLP_Constant.py" />
-        <option value="$PROJECT_DIR$/restor.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Feature_Loader.py" />
-        <option value="$PROJECT_DIR$/NLP/NLP_Tool.py" />
-        <option value="$PROJECT_DIR$/NLP_function.py" />
-        <option value="$PROJECT_DIR$/Label_data.py" />
         <option value="$PROJECT_DIR$/Label_Data.py" />
         <option value="$PROJECT_DIR$/maintain_data/Feature_Loader.py" />
         <option value="$PROJECT_DIR$/dic/userdic" />
@@ -162,20 +185,29 @@
         <option value="$PROJECT_DIR$/main/Build_Model.py" />
         <option value="$PROJECT_DIR$/main/Build_Model_vechile.py" />
         <option value="$PROJECT_DIR$/main/Build_Model_for_violate.py" />
-        <option value="$PROJECT_DIR$/flask/controller.py" />
-        <option value="$PROJECT_DIR$/maintain_data/Extract_Context.py" />
         <option value="$PROJECT_DIR$/main/Build_Model_for_accident.py" />
         <option value="$PROJECT_DIR$/main/Build_Model_for_region.py" />
         <option value="$PROJECT_DIR$/main/Build_Model_for_vechile.py" />
         <option value="$PROJECT_DIR$/main/Build_Model_for_commit_crime.py" />
         <option value="$PROJECT_DIR$/main/Build_Model_for_driving_occupation.py" />
-        <option value="$PROJECT_DIR$/maintain_data/Embed_Verdict.py" />
         <option value="$PROJECT_DIR$/main/Build_Model_for_alocohol.py" />
-        <option value="$PROJECT_DIR$/Label_Constant.py" />
         <option value="$PROJECT_DIR$/main_py/Build_Model_for_alocohol.py" />
         <option value="$PROJECT_DIR$/main_py/Build_Model_for_violate_.py" />
         <option value="$PROJECT_DIR$/main_py/Build_Model_for_violate_property.py" />
         <option value="$PROJECT_DIR$/flask/Factor_Extractor.py" />
+        <option value="$PROJECT_DIR$/flask/controller.py" />
+        <option value="$PROJECT_DIR$/main_py/Verdict_Analyzer.py" />
+        <option value="$PROJECT_DIR$/maintain_data/Extract_Context.py" />
+        <option value="$PROJECT_DIR$/maintain_data/Embed_Verdict.py" />
+        <option value="$PROJECT_DIR$/main_py/Build_Model_for_accident.py" />
+        <option value="$PROJECT_DIR$/main_py/Build_Model_for_driving_occupation.py" />
+        <option value="$PROJECT_DIR$/main_py/Build_Model_for_region.py" />
+        <option value="$PROJECT_DIR$/main_py/Build_Model_for_vechile.py" />
+        <option value="$PROJECT_DIR$/main_py/Build_Model_for_commit_crime.py" />
+        <option value="$PROJECT_DIR$/flask_py/Factor_Extractor.py" />
+        <option value="$PROJECT_DIR$/flask_py/transform_vec_to_json.py" />
+        <option value="$PROJECT_DIR$/flask_py/controller.py" />
+        <option value="$PROJECT_DIR$/Label_Constant.py" />
       </list>
     </option>
   </component>
@@ -210,7 +242,7 @@
             <path>
               <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
               <item name="verdict_understanding" type="462c0819:PsiDirectoryNode" />
-              <item name="flask" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_py" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
@@ -225,7 +257,17 @@
             <path>
               <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
               <item name="verdict_understanding" type="462c0819:PsiDirectoryNode" />
+              <item name="ML" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="verdict_understanding" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="verdict_understanding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="verdict_understanding" type="462c0819:PsiDirectoryNode" />
+              <item name="NLP" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,28 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Factor_Extractor">
-    <configuration name="Build_Model_for_alocohol" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="hackthon" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/Build_Model_for_alocohol.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.controller">
     <configuration name="Build_Model_for_commit_crime" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hackthon" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -293,11 +314,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main_py" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/Build_Model_for_commit_crime.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_py/Build_Model_for_commit_crime.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -306,7 +327,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Build_Model_for_driving_occupation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Build_Model_for_region" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hackthon" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -314,11 +335,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main_py" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/Build_Model_for_driving_occupation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_py/Build_Model_for_region.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -327,7 +348,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Embed_Verdict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Build_Model_for_vechile" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hackthon" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -335,11 +356,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/maintain_data" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main_py" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/maintain_data/Embed_Verdict.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_py/Build_Model_for_vechile.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -356,11 +377,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_py" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask/Factor_Extractor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_py/Factor_Extractor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="hackthon" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_py" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_py/controller.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -370,19 +412,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Build_Model_for_commit_crime" />
-      <item itemvalue="Python.Build_Model_for_driving_occupation" />
+      <item itemvalue="Python.Build_Model_for_region" />
+      <item itemvalue="Python.Build_Model_for_vechile" />
       <item itemvalue="Python.Factor_Extractor" />
-      <item itemvalue="Python.Embed_Verdict" />
-      <item itemvalue="Python.Build_Model_for_alocohol" />
+      <item itemvalue="Python.controller" />
+      <item itemvalue="Python.Build_Model_for_commit_crime" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Factor_Extractor" />
-        <item itemvalue="Python.Build_Model_for_alocohol" />
-        <item itemvalue="Python.Embed_Verdict" />
-        <item itemvalue="Python.Build_Model_for_driving_occupation" />
+        <item itemvalue="Python.controller" />
         <item itemvalue="Python.Build_Model_for_commit_crime" />
+        <item itemvalue="Python.Factor_Extractor" />
+        <item itemvalue="Python.Build_Model_for_vechile" />
+        <item itemvalue="Python.Build_Model_for_region" />
       </list>
     </recent_temporary>
   </component>
@@ -410,6 +452,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21730515" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -442,39 +485,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_data.json" />
-    <entry file="file://$PROJECT_DIR$/NLP_Constant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maintain_data/Feature_Production.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML/Feature_Transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maintain_data/Label_Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="15" selection-start-line="25" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1560130599197" expanded="true" signature="190:832" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Program Files/Python36/Lib/site-packages/jieba/_compat.py" />
     <entry file="file://D:/Program Files/Python36/Lib/site-packages/flask/app.py" />
     <entry file="file://D:/Program Files/Python36/Lib/site-packages/flask/_compat.py" />
@@ -486,16 +496,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.py" />
-    <entry file="file://$PROJECT_DIR$/maintain_data/Feature_Transformer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/maintain_data/Feature_Loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -535,16 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Verdict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="36" column="64" lean-forward="true" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,13 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Program Files/Python37/Lib/site-packages/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="680" selection-start-line="680" selection-end-line="680" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Program Files/Python37/Lib/site-packages/sklearn/tree/tree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -666,110 +649,61 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/Build_Model_for_violate.py" />
-    <entry file="file://$PROJECT_DIR$/main_py/Verdict_Analyzer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="29" column="27" selection-start-line="29" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_case.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask/controller.py">
+    <entry file="file://D:/Program Files/Python37/Lib/site-packages/flask/_compat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="142">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_accident.py">
+    <entry file="file://D:/Program Files/Python37/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="134">
+          <caret line="1817" selection-start-line="1817" selection-end-line="1817" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_vechile.py">
+    <entry file="file://D:/Program Files/Python37/Lib/site-packages/keras/engine/training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maintain_data/Extract_Context.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="161" column="34" selection-start-line="161" selection-start-column="34" selection-end-line="161" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_commit_crime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="142">
+          <caret line="1163" selection-start-line="1163" selection-end-line="1163" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maintain_data/Extract_Label.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="41" selection-start-line="41" selection-end-line="58" selection-end-column="37" />
+        <state relative-caret-position="285">
+          <caret line="93" column="24" lean-forward="true" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_region.py">
+    <entry file="file://$PROJECT_DIR$/maintain_data/Feature_Production.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" lean-forward="true" selection-start-line="9" selection-end-line="14" />
+        <state relative-caret-position="741">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maintain_data/Feature_Transformer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="29" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maintain_data/Embed_Verdict.py">
+    <entry file="file://$PROJECT_DIR$/maintain_data/Label_Data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="37" column="27" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="37" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Label_Constant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="45" column="16" selection-start-line="45" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_driving_occupation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        <state relative-caret-position="-281">
+          <caret line="25" column="15" selection-start-line="25" selection-end-line="26" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -778,7 +712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_alocohol.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="-130">
           <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-end-line="4" selection-end-column="18" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
@@ -786,23 +720,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Verdict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_accident.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="80" column="35" lean-forward="true" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_driving_occupation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1548">
+          <caret line="96" column="50" selection-start-line="96" selection-start-column="50" selection-end-line="96" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_region.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_vechile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_py/Verdict_Analyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_violate_property.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask/Factor_Extractor.py">
+    <entry file="file://$PROJECT_DIR$/flask_py/Factor_Extractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+        <state relative-caret-position="209">
+          <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_py/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="52" column="44" lean-forward="true" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maintain_data/Extract_Context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_py/transform_vec_to_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="96" column="54" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_py/Build_Model_for_commit_crime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maintain_data/Embed_Verdict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Label_Constant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>

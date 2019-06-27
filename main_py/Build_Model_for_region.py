@@ -19,7 +19,7 @@ training_verdict_list = pickle.load(open('../embed_verdict/unsafe_driving_'+str(
 word_set_dict = pickle.load(open('../embed_verdict/fcs_word_set.dic', 'rb'))
 word_to_index_dict = pickle.load(open('../embed_verdict/fcs_word_index.dic','rb'))
 index_to_word_dict = pickle.load(open('../embed_verdict/fcs_index_word.dic','rb'))
-word_number = len(word_set_dict['fcs_36'])
+word_number = len(word_set_dict[lc.region_code])
 training_x = []
 training_y = []
 
@@ -44,7 +44,7 @@ for y in training_y:
     label_count[np.argmax(y)] +=1
 print(label_count)
 print(max_len)
-"""
+
 training_x = pad_vec_sequence(training_x,max_len)
 training_y = np.asarray(training_y)
 print(training_x)
@@ -71,8 +71,8 @@ batch_size = 5
 
 #model = load_model('../model/region.h5')
 
-#model.fit(training_x,training_y,validation_split = 0.1,epochs = 5)
-#model.save('../model/region.h5')
+model.fit(training_x,training_y,validation_split = 0.1,epochs = 5)
+model.save('../model/region.h5')
 #del(model)
 model = load_model('../model/region.h5')
 result=model.predict(training_x)
@@ -83,4 +83,3 @@ for i,x in enumerate(result):
         count +=1
 
 print(count/len(result))
-"""

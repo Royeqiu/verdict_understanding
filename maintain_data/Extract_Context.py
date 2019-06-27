@@ -21,6 +21,7 @@ word_set_dict = dict()
 
 for verdict_count,verdict in enumerate(verdict_list):
     print(verdict_count)
+
 #rule
     if lc.alcohol_code in verdict.keys():
         if lc.alcohol_code not in word_set_dict.keys():

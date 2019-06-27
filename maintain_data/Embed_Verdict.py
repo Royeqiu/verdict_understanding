@@ -36,7 +36,7 @@ def add_text(label_file_dict,verdict_root_path):
             for i in range(1,len(total_sen)):
                 tmp_text += total_sen[i]
             text = tmp_text
-            sentences = [sentence for i,sentence in enumerate(re.split('。|，|：|；|\uf6b1|\uf6b2|\uf6b3|\uf6b4|\uf6b5|\uf6b6|\uf6b7|\uf6b8|',text)) if len(sentence)!=0 and i!=0]
+            sentences = [sentence for i,sentence in enumerate(re.split('。|，|：|；|\uf6b1|\uf6b2|\uf6b3|\uf6b4|\uf6b5|\uf6b6|\uf6b7|\uf6b8',text)) if len(sentence)!=0 and i!=0]
             verdict_label['text'] = sentences
     return label_file_dict
 
