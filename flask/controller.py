@@ -1,11 +1,10 @@
 from flask import Flask,render_template
 from flask import request
 import flask
-
+from main_py import Verdict_Analyzer
 import json
+from Verdict import Verdict
 app = Flask(__name__)
-
-
 
 @app.route("/test_query",methods=['POST'])
 def test_query():
@@ -41,6 +40,13 @@ def test_query():
     resp.headers['Access-Control-Allow-Origin'] = '*'
 
     return resp
+
+@app.route("/formal_query",methods=['POST'])
+def fomal_query():
+    json_verdict = request.get_json()
+    json_feature = json.load(open('../pre_training_feature/unsafe_driving.fea', 'r', encoding='utf-8'))
+    test_verdict = Verdict(json_verdict)
+    is_unsafe_driving = Verdict_Analyzer.analyze(test_verdict)
 
 if __name__ == "__main__":
     app.run(host= '0.0.0.0', port=5000)

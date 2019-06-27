@@ -16,7 +16,6 @@ def build_dic(word_set):
     return word_to_index,index_to_word
 verdict_count = 10000
 verdict_list = pickle.load(open('../factor_training_data/unsafe_driving_'+str(verdict_count)+'.emb','rb'))
-bert_embedding = BertEmbedding(model='bert_12_768_12', dataset_name='wiki_cn_cased')
 word_set_dict = dict()
 
 

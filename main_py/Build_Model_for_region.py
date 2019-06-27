@@ -24,23 +24,27 @@ training_x = []
 training_y = []
 
 max_len = 0
+mean_len = 0
 for i,verdict in enumerate(training_verdict_list):
     input_x = []
-    if 'fcs_34_context' in verdict.keys():
-        for sen in verdict['fcs_34_context']:
-            input_x.extend([word_to_index_dict['fcs_34'][word] for word in sen if word in word_to_index_dict['fcs_34'].keys()])
-
+    if lc.region_context in verdict.keys():
+        for sen in verdict[lc.region_context]:
+            input_x.extend([word_to_index_dict[lc.region_code][word] for word in sen if word in word_to_index_dict[lc.region_code].keys()])
+        if len(input_x)>100:
+            continue
         if len(input_x) > max_len:
             max_len = len(input_x)
         training_x.append(input_x)
-        training_y.append(verdict['label_vector'][7:10])
-
+        training_y.append(verdict['label_vector'][lc.region_vec_index:lc.region_vec_index+lc.region_vec_len])
+print(mean_len/len(training_x))
 label_count = dict()
 for i in range(lc.vector_len):
     label_count[i] = 0
 for y in training_y:
     label_count[np.argmax(y)] +=1
 print(label_count)
+print(max_len)
+"""
 training_x = pad_vec_sequence(training_x,max_len)
 training_y = np.asarray(training_y)
 print(training_x)
@@ -55,7 +59,7 @@ model.add(keras.layers.SpatialDropout1D(0.2))
 model.add(keras.layers.LSTM(300))
 model.add(keras.layers.Activation('relu'))
 model.add(keras.layers.Dropout(0.5))
-model.add(keras.layers.Dense(3))
+model.add(keras.layers.Dense(lc.region_vec_len))
 model.add(keras.layers.Activation('softmax'))
 binary_loss = 'binary_crossentropy'
 categorical_loss = 'categorical_crossentropy'
@@ -65,12 +69,18 @@ data_length = len(training_x)
 
 batch_size = 5
 
-#model = load_model('../model/vehicle.h5')
+#model = load_model('../model/region.h5')
 
-model.fit(training_x,training_y,validation_split = 0.1,epochs = 5)
-model.save('../model/vehicle.h5')
+#model.fit(training_x,training_y,validation_split = 0.1,epochs = 5)
+#model.save('../model/region.h5')
 #del(model)
-model = load_model('../model/vehicle.h5')
+model = load_model('../model/region.h5')
 result=model.predict(training_x)
+count = 0
 for i,x in enumerate(result):
     print(np.argmax(x),np.argmax(training_y[i]))
+    if np.argmax(x)==np.argmax(training_y[i]):
+        count +=1
+
+print(count/len(result))
+"""

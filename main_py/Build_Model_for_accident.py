@@ -36,33 +36,21 @@ training_y = []
 max_len = 0
 for i,verdict in enumerate(training_verdict_list):
     input_x = []
-    if lc.driving_occupation_context in verdict.keys():
-        for sen in verdict[lc.driving_occupation_context]:
-            input_x.extend([word_to_index_dict[lc.driving_occupation_code][word] for word in sen if word in word_to_index_dict[lc.driving_occupation_code].keys()])
-
+    if 'fcs_36_context' in verdict.keys():
+        for sen in verdict['fcs_36_context']:
+            input_x.extend([word_to_index_dict['fcs_36'][word] for word in sen if word in word_to_index_dict['fcs_36'].keys()])
         if len(input_x) > max_len:
             max_len = len(input_x)
         training_x.append(input_x)
-        training_y.append(verdict['label_vector'][lc.driving_occupation_vec_index:lc.driving_occupation_vec_index+lc.driving_occupation_vec_len])
-    if verdict[lc.driving_occupation_code]=='1':
-        for j in range(10):
-            training_x.append(input_x)
-            training_y.append(verdict['label_vector'][
-                              lc.driving_occupation_vec_index:lc.driving_occupation_vec_index + lc.driving_occupation_vec_len])
+        training_y.append(verdict['label_vector'][14:15])
 
+print(max_len)
+"""
 training_x = pad_vec_sequence(training_x,max_len)
 training_y = np.asarray(training_y)
 print(training_x)
-print(training_y)
 print(training_x.shape)
 print(training_y.shape)
-
-label_count = dict()
-for i in range(2):
-    label_count[i] = 0
-for y in training_y:
-    label_count[y[0]] +=1
-print(label_count)
 
 #mask_vec = np.zeros(768, dtype='float64')
 
@@ -82,21 +70,19 @@ model.compile(optimizer='adam', loss=binary_loss, metrics=['accuracy'])
 data_length = len(training_x)
 
 batch_size = 5
-model = load_model('../model/driving_occupation.h5')
 
-#model.fit(training_x,training_y,validation_split = 0.1,epochs = 5)
-#model.save('../model/driving_occupation.h5')
+model.fit(training_x,training_y,validation_split = 0.1,epochs = 5)
+model.save('../model/accident.h5')
 #del(model)
-#model = load_model('../model/driving_occupation.h5')
+model = load_model('../model/accident.h5')
 result = model.predict([training_x])
 correct_count = 0
 for i,single in enumerate(result):
-    print(single,training_y[i])
-    if single[0] > lc.driving_occupation_thread:
+    if single[0] > lc.accident_thread:
         re = 1.0
     else:
         re = 0.0
     if re == training_y[i][0]:
         correct_count+=1
-    print(re,':',training_y[i][0])
 print(correct_count/len(training_x))
+"""
