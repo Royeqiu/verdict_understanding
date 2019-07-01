@@ -7,6 +7,7 @@ from Verdict import Verdict
 import numpy as np
 from main_py import Build_Model_for_alocohol as alocohol_model
 from main_py import Build_Model_for_violate_property as violate_property_model
+import tensorflow as tf
 
 word_set = pickle.load(open('../embed_verdict/fcs_word_set.dic','rb'))
 word_to_index_dic = pickle.load(open('../embed_verdict/fcs_word_index.dic','rb'))
@@ -18,6 +19,7 @@ driving_occupation_model = load_model(lc.model_path + lc.driving_occupation_mode
 commit_crime_model = load_model(lc.model_path + lc.commit_crime_model_name)
 region_model = load_model(lc.model_path + lc.region_model_name)
 model_list = [alocohol_model,vehicle_model,region_model,accident_model,violate_property_model,driving_occupation_model,commit_crime_model]
+graph = tf.get_default_graph()
 
 
 def pad_vec_sequence(vec_sequences, max_len,pad_value = 0, vec_length=768):
@@ -62,15 +64,17 @@ def turn_index_to_vec(result_list):
     return vec_list
 
 def get_prdict_result(padded_encode_dict,target_text_dict):
-    result_list = []
-    for factor_index, factor_code in enumerate(lc.factor_code_list):
-        if lc.factor_is_ml_model_list[factor_index]:
-            if padded_encode_dict[factor_code] is None:
-                result_list.append(None)
+    global graph
+    with graph.as_default():
+        result_list = []
+        for factor_index, factor_code in enumerate(lc.factor_code_list):
+            if lc.factor_is_ml_model_list[factor_index]:
+                if padded_encode_dict[factor_code] is None:
+                    result_list.append(None)
+                else:
+                    result_list.append(model_list[factor_index].predict(np.asarray([padded_encode_dict[factor_code]])))
             else:
-                result_list.append(model_list[factor_index].predict(np.asarray([padded_encode_dict[factor_code]])))
-        else:
-            result_list.append(model_list[factor_index].predict(target_text_dict[lc.factor_code_list[factor_index]]))
+                result_list.append(model_list[factor_index].predict(target_text_dict[lc.factor_code_list[factor_index]]))
 
     return result_list
 
@@ -99,12 +103,14 @@ def get_target_text(verdict_sentences):
 
 def get_encoding(target_text_dict):
     text_encode_dict = dict()
-    for factor_code in target_text_dict.keys():
+    for factor_index,factor_code in enumerate(target_text_dict.keys()):
         if target_text_dict[factor_code] is not None:
             text_encode_dict[factor_code] = []
-            for word in target_text_dict[factor_code]:
+            for word_index,word in enumerate(target_text_dict[factor_code]):
                 if len(word)==0 or word ==' ':
                     continue
+                if word_index == lc.factor_max_len_list[factor_index]-1:
+                    break
                 if word in word_to_index_dic[factor_code].keys():
                     text_encode_dict[factor_code].append(word_to_index_dic[factor_code][word])
                 else:

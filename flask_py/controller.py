@@ -5,6 +5,8 @@ from main_py import Verdict_Analyzer
 import json
 from Verdict import Verdict
 from flask_py import transform_vec_to_json
+import tensorflow as tf
+
 app = Flask(__name__)
 
 @app.route("/test_query",methods=['POST'])
@@ -42,17 +44,25 @@ def test_query():
 
     return resp
 
-@app.route("/formal_query",methods=['POST'])
+@app.route("/formal_query",methods=['POST','OPTIONS'])
 def fomal_query():
     from flask_py import Factor_Extractor
+    #json_verdict = request.data
 
-    json_verdict = request.get_json()
-    test_verdict = Verdict(json_verdict)
-    is_unsafe_driving = Verdict_Analyzer.analyze(test_verdict)
-    if is_unsafe_driving == 1:
-        res_vec = Factor_Extractor.extract_factor(test_verdict)
-        template_result = transform_vec_to_json.produce_template(res_vec)
-    else:
+
+    try:
+        json_verdict = request.get_json()
+        print(json_verdict)
+        test_verdict = Verdict(json_verdict)
+        is_unsafe_driving = Verdict_Analyzer.analyze(test_verdict)
+        if is_unsafe_driving == 1:
+            res_vec = Factor_Extractor.extract_factor(test_verdict)
+            template_result = transform_vec_to_json.produce_template(res_vec)
+            print(res_vec)
+        else:
+            template_result = transform_vec_to_json.basic_template()
+    except Exception as e:
+        print(str(e))
         template_result = transform_vec_to_json.basic_template()
     resp = flask.Response(json.dumps([template_result], ensure_ascii=False))
     resp.headers['Access-Control-Allow-Origin'] = '*'
